@@ -51,4 +51,5 @@ RUN unzip sdk-tools-linux.zip -d ${ANDROID_HOME} && \
 rm sdk-tools-linux.zip && \
 echo y | ${ANDROID_HOME}/tools/bin/sdkmanager "platforms;android-${ANDROID_COMPILE_SDK}" 
 
-RUN apt-get install -y git-crypt
+ADD https://github.com/sgerrand/alpine-pkg-git-crypt/releases/download/0.6.0-r1/git-crypt-0.6.0-r1.apk git-crypt.apk
+RUN apk add git-crypt.apk
