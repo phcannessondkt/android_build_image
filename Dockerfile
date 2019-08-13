@@ -50,3 +50,5 @@ ADD https://dl.google.com/android/repository/sdk-tools-linux-${ANDROID_SDK_TOOLS
 RUN unzip sdk-tools-linux.zip -d ${ANDROID_HOME} && \
 rm sdk-tools-linux.zip && \
 echo y | ${ANDROID_HOME}/tools/bin/sdkmanager "platforms;android-${ANDROID_COMPILE_SDK}" 
+
+RUN apt-get install -y git-crypt
