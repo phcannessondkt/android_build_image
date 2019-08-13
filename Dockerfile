@@ -30,6 +30,7 @@ ruby-dev \
 openssh \
 g++ \
 make \
+gnupg \
 && rm -rf /tmp/* /var/tmp/*
 
 RUN apk --no-cache add ca-certificates wget
