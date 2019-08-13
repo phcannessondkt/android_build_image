@@ -1,5 +1,5 @@
 FROM anapsix/alpine-java:8_jdk
-LABEL maintainer "IISUE <sklee@iisue.com>"
+LABEL maintainer "Paul-Hubert CANNESSON <paulhubert.cannesson.partner@decathlon.com>"
 
 ARG VCS_REF
 LABEL org.label-schema.vcs-ref=$VCS_REF \
