@@ -1,4 +1,4 @@
-FROM anapsix/alpine-java:8_jdk
+FROM openjdk:8-alpine 
 LABEL maintainer "Paul-Hubert CANNESSON <paulhubert.cannesson.partner@decathlon.com>"
 
 ARG VCS_REF
